@@ -1,19 +1,21 @@
 fun main() {
 
     /** First car with builder */
-    val sportCar: Builder = CarBuilder().setSeats(2)
+    val sportCar = CarBuilder()
+        .setSeats(2)
+        .build()
 
     /** Second car with builder */
-    val suvCar: Builder = CarBuilder()
+    val suvCar = CarBuilder()
         .setSeats(6)
         .setTransmission("SUV Transmission")
         .setTripComputer("SUV Computer")
+        .build()
 
-    showCarSpecifications((sportCar as CarBuilder).getCar())
-    showCarSpecifications((suvCar as CarBuilder).getCar())
-
+    showCarDetails(sportCar)
+    showCarDetails(suvCar)
 }
 
-fun showCarSpecifications(car: Car) {
+fun showCarDetails(car: Car) {
     println("Seats: ${car.carSeats} | Transmission: ${car.carTransmission} | Trip Computer: ${car.carTripComputer}")
 }
