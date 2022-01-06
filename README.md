@@ -5,7 +5,7 @@ Exemplo de implementação do padrão de projeto _Builder_
 
 Segundo REFACTORING-GURU (2022):
 
-"**O padrão Builder:** É um padrão de projeto criacional que permite a você construir objetos complexos passo a passo. O padrão permite que você produza diferentes tipos e representações de um objeto usando o mesmo código de construção."
+**O padrão Builder:** "É um padrão de projeto criacional que permite a você construir objetos complexos passo a passo. O padrão permite que você produza diferentes tipos e representações de um objeto usando o mesmo código de construção."
 
 ## O problema
 
@@ -13,7 +13,7 @@ Segundo REFACTORING-GURU (2022):
 
 ## Solução
 
-Segundo REFACTORING-GURU (2022), "O padrão Builder sugere que você extraia o código de construção do objeto para fora de sua própria classe e mova ele para objetos separados chamados builders."
+Para REFACTORING-GURU (2022), "O padrão Builder sugere que você extraia o código de construção do objeto para fora de sua própria classe e mova ele para objetos separados chamados builders."
 
 ## Estrutura
 
@@ -21,7 +21,7 @@ Segundo REFACTORING-GURU (2022), "O padrão Builder sugere que você extraia o c
 
 <sup>Fonte: https://refactoring.guru/pt-br/design-patterns/builder</sup>
 
-## Implementação
+## Implementação (sem Director)
 
 **Builder**
 
