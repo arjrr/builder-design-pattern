@@ -4,16 +4,19 @@ class CarBuilder : Builder {
     var carTripComputer: String = ""
     var carTransmission: String = ""
 
-    override fun setSeats(seats: Int) {
+    override fun setSeats(seats: Int): Builder {
         carSeats = seats
+        return this
     }
 
-    override fun setTripComputer(computer: String) {
+    override fun setTripComputer(computer: String): Builder {
         carTripComputer = computer
+        return this
     }
 
-    override fun setTransmission(transmission: String) {
+    override fun setTransmission(transmission: String): Builder {
         carTransmission = transmission
+        return this
     }
 
     fun getCar(): Car {
